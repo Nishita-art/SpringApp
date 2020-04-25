@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean class="com.capg.spring.beans.EmployeeList" id="list">
+  
+	<property name="empList">
+	<list>
+	<ref bean="emp1"/>
+	<ref bean="emp2"/>
+	</list></property>
+</bean>
+
+<bean class="com.capg.spring.beans.Employee" id="emp1">
+	
+	<property name="employeeId" value="89475"/>
+	<property name="employeeName" value="A"/>
+	<property name="salary" value="35000"/>
+	<property name="unit" value="PES"/>
+	<property name="age" value="28"/>
+</bean>
+<bean class="com.capg.spring.beans.Employee" id="emp2">
+	
+	<property name="employeeId" value="16457"/>
+	<property name="employeeName" value="H"/>
+	<property name="salary" value="55000"/>
+	<property name="unit" value="PES"/>
+	<property name="age" value="33"/>
+</bean>
+	
+</beans>
+
+
+
